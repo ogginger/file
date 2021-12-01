@@ -1,6 +1,7 @@
+import { Encoding } from "crypto";
 import fs from "fs"
 export default class file {
-    constructor( public filename: string ) {}
+    constructor( public filename: string, public encoding: Encoding = "utf8" ) {}
     public async exists() {
         let self = this;
         try {
@@ -24,7 +25,7 @@ export default class file {
     }
     public async get() {
         let self = this;
-        let file = await fs.promises.readFile( self.filename, "utf8" );
+        let file = await fs.promises.readFile( self.filename, self.encoding );
         return file;
     }
     public async create( content: string = "" ) {
@@ -32,12 +33,12 @@ export default class file {
         if ( await self.exists() ) {
             throw new Error("File already exists!");
         } else {
-            await fs.promises.writeFile( self.filename, content, "utf8" );
+            await fs.promises.writeFile( self.filename, content, self.encoding );
         }
     }
     public async update( content: string = "" ) {
         let self = this;
-        await fs.promises.writeFile( self.filename, content, "utf8" );
+        await fs.promises.writeFile( self.filename, content, self.encoding );
     }
 }
 export const tests: any = [{
