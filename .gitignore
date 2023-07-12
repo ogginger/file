@@ -1,3 +1,4 @@
 builds/
 node_modules/
 src/main.ts
+src/lib/
