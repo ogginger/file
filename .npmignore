@@ -1,8 +1,7 @@
 .vscode
 builds/main.js
 builds/main.js.map
-builds/lib/test.js
-builds/lib/test.js.map
+builds/lib/
 node_modules
 src/main.ts
 src/lib/test.ts
