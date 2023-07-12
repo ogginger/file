@@ -16,6 +16,7 @@
   "author": "og.ginger@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "@ogginger/testsuite": "^1.0.1",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.4.1"
   }

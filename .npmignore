@@ -1,10 +1,8 @@
 .vscode
 builds/main.js
 builds/main.js.map
-builds/lib/
 node_modules
 src/main.ts
-src/lib/test.ts
 test
 .gitignore
 tsconfig.json
