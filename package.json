@@ -1,7 +1,22 @@
 {
-  "devDependencies": {
-    "@types/lodash": "^4.14.177",
-    "@types/node": "^16.11.10",
+  "name": "@ogginger/file",
+  "version": "1.0.0",
+  "description": "Crud methods for files.",
+  "main": "builds/file.js",
+  "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ogginger/file"
+  },
+  "author": "og.ginger@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.4.1"
   }
 }
