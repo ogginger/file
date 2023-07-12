@@ -1,16 +1,17 @@
-# empty
-Empty typescript project for quick-starting development.
+# file
+Asynchronous CRUD methods for Files.
 
-Add- 
-  1. src/
-  2. builds/
-  
-Update .vscode/
-  1. launch.json
-    a. Change the location of the program to run to the .ts entrypoint.
-  2. tasks.json 
-    a. Change 'My Task' to the name of the project.
-    
-Run npm init.
+To Use: 
+  1. await new file( "filename", "encoding" [optional - default 'utf8'] ).get();
 
-Ready to go!
+Methods:
+  1. exists
+    -Checks to see if a file exists. Returns boolean.
+  2. get
+    -Returns the file contents as a string. Throws an error if the filename doesn't exist.
+  3 create
+    -Takes a string as an argument and creates a file with the given string as the body. Throws an error if the file already exists.
+  4. delete
+    -Deletes the file. Throws an error if the file doesn't exist.
+  5. update
+    -Takes a string as an argument and changes the body of the file to the given string.
